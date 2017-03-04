@@ -224,7 +224,7 @@ public class AgentLoader
         }
         try
         {
-            Object agentLoaderObject = agentLoaderClass.newInstance();
+            final Object agentLoaderObject = agentLoaderClass.newInstance();
 
             // the agent loader might be instantiated in another class loader
             // so no interface it implements is guaranteed to be visible here.
